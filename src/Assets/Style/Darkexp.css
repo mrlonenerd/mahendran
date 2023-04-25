@@ -1,0 +1,19 @@
+.expbox{
+    border: 1px solid #27E1C1;
+   border-radius: 5%;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.expp{
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 5%;
+    color: white;
+    background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #0d0a0b, #161215, #1c181c, #26262f, #2b3642, #2d4851, #345a5a);
+}
+
+.expp:hover{
+ border: 2px solid rgb(78, 128, 151);
+   
+}

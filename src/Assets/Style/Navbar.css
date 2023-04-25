@@ -1,0 +1,22 @@
+.profile{
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    
+}
+.profile:hover{
+    border: 3px solid orange;
+    transform: scale(1.5);
+    
+}
+   
+
+#navlink{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(247, 172, 11);
+    font-weight: 700;
+}
+
+#navlink:hover{
+ color: rgb(247, 117, 11);
+}

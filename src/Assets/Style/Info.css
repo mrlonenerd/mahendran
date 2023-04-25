@@ -1,0 +1,93 @@
+.introtext {
+    text-align: center;
+    padding: 70px 0;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.dark-theme {
+     background-color: #36363f; 
+    color: white;
+    background-image: linear-gradient(to right top, #000000, #100a0f, #15141c, #111d28, #06262f, #06262f, #06262f, #06262f, #111d28, #15141c, #100a0f, #000000);
+   
+
+   
+    
+  }
+.h2 {
+    font-family: Poppins, sans-serif;
+    font-size: large;
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+    
+}
+
+.h5 {
+    
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+
+}
+
+.h6 {
+    padding-top: 5px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+}
+.button {
+    overflow: hidden;
+    left: 40%;
+    top: 40%;
+    width: 200px;
+    perspective: 400px;
+    background-color: transparent;
+    border: none;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.3)));
+
+}
+
+.button span {
+    display: block;
+    position: relative;
+    transition: 0.3s ease-in-out all;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    background-color: #F99417;
+    color: white;
+    width: 100%;
+    font-family: Poppins, sans-serif;
+    padding: 10px;
+    
+
+}
+
+.button span:after {
+    display: block;
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease-in-out all;
+    transform-origin: 50% 0;
+    transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+    background-color: #FFEA20;
+    color:  #F99417;
+    width: 100%;
+    font-family: Poppins, sans-serif;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+ 
+    
+}
+
+.button:hover span {
+    transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}
+
+
+
+
