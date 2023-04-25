@@ -21,11 +21,12 @@ function App() {
           <Route path="/certifications" element={< Certifications />} />
           <Route path="/bye" element={<Contact />} />
           <Route path="/education" element={<Education />} />
-         
+
+          <Route path="/" element={<Landing_Page />} />
 
         </Routes>
-      </BrowserRouter> 
-      <Landing_Page />
+      </BrowserRouter>
+      {/* <Landing_Page /> */}
       {/* <DarkModeLandding/> */}
     </>
   )
