@@ -1,21 +1,24 @@
 const DarkmodeSummry = () => {
-    return (
-        <>
-            <div class="container pt-5 mb-5">
-                <div class="row">
-                    <div class="col p-5">
-                      
-                        <p class="text-wrap skillspara" id="/about" >
-                            <h2 class="h5 text-center" >Summary</h2>
-                            <br />
-                            With 2 years of experience as a software developer, I specialize in blockchain development using Ethereum, Hyperledger, Hardhat, and Solidity, as well as full-stack web application development using ReactJS, NodeJS, MongoDB, SQL, and Express JS. My expertise in these technologies is complemented by strong debugging and reverse engineering skills, allowing me to troubleshoot and optimize code with precision. Whether working independently or as part of a team, I am dedicated to delivering high-quality software solutions that meet business objectives and exceed user expectations.
-                        </p>                      
-                        
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
+  return (
+    <>
+      <div class="container pt-5 mb-5">
+        <div class="row">
+          <div class="col p-5">
+            <p class="text-wrap skillspara" id="/about">
+              <h2 class="h5 text-center">Summary</h2>
+              <br />
+              Welcome to my portfolio! I am a passionate and dedicated web
+              developer with two years of hands-on experience in crafting
+              dynamic and user-centric web applications. My expertise lies in
+              harnessing the power of JavaScript, HTML, CSS, and ReactJS,
+              NodeJS, MongoDB, and basics of SQL and ExpressJS to create
+              seamless and engaging digital experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default DarkmodeSummry
+export default DarkmodeSummry;

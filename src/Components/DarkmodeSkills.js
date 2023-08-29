@@ -42,26 +42,7 @@ const DarkmodeSkills = () => {
                         <span class="progressbar__text shadow-scss">Node.js</span>
                     </div>
 
-                    <div class="progressbar">
-                        <svg class="progressbar__svg">
-                            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-js shadow-js"> </circle>
-                        </svg>
-                        <span class="progressbar__text shadow-js">Solidity</span>
-                    </div>
-
-                    <div class="progressbar">
-                        <svg class="progressbar__svg">
-                            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-ts shadow-ts"> </circle>
-                        </svg>
-                        <span class="progressbar__text shadow-ts">Ethereum</span>
-                    </div>
-
-                    <div class="progressbar">
-                        <svg class="progressbar__svg">
-                            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-node shadow-node"> </circle>
-                        </svg>
-                        <span class="progressbar__text shadow-node">Hyperledger</span>
-                    </div>
+            
 
                     <div class="progressbar">
                         <svg class="progressbar__svg">
@@ -75,12 +56,7 @@ const DarkmodeSkills = () => {
                         </svg>
                         <span class="progressbar__text shadow-angular">Docker</span>
                     </div>
-                    <div class="progressbar">
-                        <svg class="progressbar__svg">
-                            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-vue shadow-vue"> </circle>
-                        </svg>
-                        <span class="progressbar__text shadow-vue">Git</span>
-                    </div>
+                
                 </div>
 
             </div>

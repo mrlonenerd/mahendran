@@ -9,92 +9,65 @@ import Certifications from "../Components/Certifications";
 import Contact from "./Contactme";
 import { useEffect, useState } from "react";
 import RocketButton from "../Components/Rocketbutton";
-import DarkModeCertification from "../Components/Darkcertification";
 import { ModebtnAtom } from "../Components/Navbar";
-import { atom, useAtom } from 'jotai';
-import DarkmodeSummry from '../Components/Summry2'
-import DarkModeIntro from "../Components/intro2"
+import { atom, useAtom } from "jotai";
+import DarkmodeSummry from "../Components/Summry2";
 import { Button } from "react-scroll";
 import DarkmodeSkills from "./DarkmodeSkills";
-import DarkmodeExperience from '../Components/Expericencedark';
+import DarkmodeExperience from "../Components/Expericencedark";
 import Navbar2 from "./Navbar2";
 const Landing_Page = () => {
-    const [buttonbackcolor, setButtonBackColor] = useAtom(ModebtnAtom)
-    const [showButton, setShowButton] = useState(false);
+  const [buttonbackcolor, setButtonBackColor] = useAtom(ModebtnAtom);
+  const [showButton, setShowButton] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 100) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
 
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 100) {
-                setShowButton(true);
-            } else {
-                setShowButton(false);
-            }
-        });
-    }, []);
+  // This function will scroll the window to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+  };
+  return (
+    <>
+      <div class="landinpage">
+        <Navbar />
 
+        <br />
+        <Intro />
 
-    // This function will scroll the window to the top 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // for smoothly scrolling
-        });
-    };
-    return (
-        <>
+        {buttonbackcolor == false ? <DarkmodeSummry /> : <Summary />}
 
-            <div class="landinpage">
-                <Navbar />
+        {buttonbackcolor == false ? <DarkmodeExperience /> : <Experience />}
 
-                <br />  
-               <Intro />
+        {buttonbackcolor == false ? "" : <Education />}
 
+        {buttonbackcolor == false ? <DarkmodeSkills /> : <Skills />}
 
+        <br />
+        <br />
 
+        <br />
 
-                {
-                    buttonbackcolor == false ? <DarkmodeSummry /> : <Summary />
-                }
+        {showButton && (
+          <div class="d-flex justify-content-end">
+            <RocketButton onClick={scrollToTop} className="back-to-top" />
+          </div>
+        )}
 
-                {buttonbackcolor == false ? <DarkmodeExperience /> : <Experience />}
-
-
-
-
-
-                {
-                    buttonbackcolor == false ? '' : <Education />
-
-                }
-
-
-                {
-                    buttonbackcolor == false ? <DarkmodeSkills /> : <Skills />
-                }
-
-                <br />
-                <div>
-                    {
-                        buttonbackcolor == false ? <DarkModeCertification /> : <Certifications />
-
-                    }
-                </div>
-
-                <br />
-
-                {showButton && (
-                    <div class="d-flex justify-content-end">
-                        <RocketButton onClick={scrollToTop} className="back-to-top" />
-                    </div>
-                )}
-
-                <Contact />
-
-
-            </div>
-        </>
-    )
-}
+        <Contact />
+      </div>
+    </>
+  );
+};
 
 export default Landing_Page;

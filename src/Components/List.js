@@ -16,30 +16,24 @@ const List = () => {
                         <div class="content">
                             <div class="icon"><img src={crypto} style={{ width: '3rem' }} /></div>
                             <div class="title">Crypto Social Media App</div>
-                            <div class="text">Work As Both Frontend And Backend  Developer For 3 Months.</div>
+                            <div class="text">Work As Frontend And   Developer For 3 Months.</div>
                         </div>
 
                     </li>
            
-            <li style={{ backgroundColor: "#36aeb3" }}>
-                <div class="content">
-                    <div class="icon"><img src={blockchain} style={{ width: '3rem' }} /></div>
-                    <div class="title">NFT</div>
-                    <div class="text">Work As Both Frontend And Backend Developer with Blockchain Technology & Solidity. </div>
-                </div>
-            </li>
+         
             <li style={{ backgroundColor: "#162d59" }}>
                 <div class="content">
                     <div class="icon"><img src={node} style={{ width: '3rem' }} /></div>
                     <div class="title">Elstriker</div>
-                    <div class="text">Work As Backend Developer With NodeJs, Express And MongoDB. </div>
+                    <div class="text">Work As Frontend Developer With ReactJS, Formik and Bootstrap. </div>
                 </div>
             </li>
             <li style={{ backgroundColor: "#f15f0e" }}>
                 <div class="content">
                     <div class="icon"><img src={land} style={{ width: '3rem' }} /></div>
                     <div class="title">Land Registration</div>
-                    <div class="text">Work As Backend Developer With Hyperledger Fabric And Nodejs And MongoDD.</div>
+                    <div class="text">Work As Fullstack Developer With  ReactJS, Jotai(Same as Redux) And Nodejs, Express JS And MongoDD.</div>
                 </div>
             </li>
             <li style={{ backgroundColor: "#E7B10A" }}>

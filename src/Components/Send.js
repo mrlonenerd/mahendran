@@ -1,18 +1,27 @@
-import '../Assets/Style/send.css'
-const Send = (props) => {
-    return (
-        <>
-            <input type="checkbox" name="send" id="send" onClick={props.onClick()} />
-            <label for="send" class="send">
-                <div class="rotate">
-                    <div class="move">
-                        <div class="part left"></div>
-                        <div class="part right"></div>
-                    </div>
-                </div>
-            </label>
-        </>
-    )
-}
+import "../Assets/Style/send.css";
+import React, { useState } from "react";
+const Send = ({ sendemail }) => {
+  const [flying, setFlying] = useState(false);
 
-export default Send
+  const handleFlyClick = () => {
+    setFlying(true);
+    sendemail();
+    setTimeout(() => {
+      setFlying(false);
+    }, 5400);
+  };
+  return (
+    <div className="conatiner">
+      <button
+        type="submit"
+        className={`mail-btn ${flying ? "fly" : ""}`}
+        onClick={()=>handleFlyClick}
+        onTouchStart={handleFlyClick}
+      >
+        send
+      </button>
+    </div>
+  );
+};
+
+export default Send;

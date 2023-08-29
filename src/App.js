@@ -7,7 +7,6 @@ import Skills from "./Components/Skills";
 import Certifications from "./Components/Certifications";
 import Contact from "./Components/Contactme";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DarkModeLandding from "./Components/Landingpage2";
 function App() {
   return (
     <>
@@ -26,8 +25,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-      {/* <Landing_Page /> */}
-      {/* <DarkModeLandding/> */}
+   
     </>
   )
 }

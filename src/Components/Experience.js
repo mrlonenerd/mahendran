@@ -1,8 +1,7 @@
-import fly from "../Assets/Image/fly.png";
+import Exp from "../Assets/Image/Exp.png";
 import List from "../Components/List";
 import { ModebtnAtom } from "../Components/Navbar";
 import { atom, useAtom } from 'jotai';
-import exp from "../Assets/Image/exp.png";
 import DarkmodeExperience from "./Expericencedark"
 const Experience = () => {
     const [buttonbackcolor, setButtonBackColor] = useAtom(ModebtnAtom)
@@ -16,7 +15,7 @@ const Experience = () => {
                             
                                 ''
                                 :
-                                <img src={fly} alt="" class="img-fluid " />
+                                <img src={Exp} alt="" class="img-fluid w-100" />
 
                             }
 
@@ -28,7 +27,7 @@ const Experience = () => {
                                 <div class="pt-5 text-center">
                                     <h2 class="h5" >Experience</h2>
                                     <h6 class="h2 pt-2">Fullstack Software Developer</h6>
-                                    <span class="h6">2+ Years OF Experince In Rapidqube Digital Solutions Pvt Ltd Chennai</span>
+                                    <span class="h6">2 Years OF Experince In Rapidqube Digital Solutions Pvt Ltd Mumbai</span>
 
                                 </div>
 
